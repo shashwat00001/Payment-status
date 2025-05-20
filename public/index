@@ -1,0 +1,19 @@
+<!-- File: public/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Generate UPI QR</title>
+</head>
+<body style="font-family:sans-serif;text-align:center;">
+  <h1>Enter Your Bank Details</h1>
+  <form action="/generate" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required /><br><br>
+    <input type="text" name="upi" placeholder="Your UPI ID (e.g. name@oksbi)" required /><br><br>
+    <input type="number" name="amount" placeholder="Amount in ₹" required /><br><br>
+    <input type="text" name="note" placeholder="Note (e.g. Festival Gift)" required /><br><br>
+    <button type="submit">Generate Tyohar Code</button>
+  </form>
+  <br>
+  <a href="/admin">Go to Admin Panel</a>
+</body>
+</html>
